@@ -1,0 +1,19 @@
+body{
+    background-color: lightgray;
+}
+.container{
+    width: 33%;
+}
+.clock{
+    width: 100%;
+    font-size: 2vw;
+    color: #005f73;
+}
+.form, .name{
+    width: 100%;
+    font-size: 2vw;
+    display: none;
+}
+.showing{
+    display: block;
+}
