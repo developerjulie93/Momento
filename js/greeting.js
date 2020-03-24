@@ -7,12 +7,14 @@ const SHOWING = "showing";
 
 function handleSubmit(e){
     e.preventDefault();
+    localStorage.setItem(USER, input.value);
+    loadName();
 }
 function loadName(){
     const user = localStorage.getItem(USER);
     if(user === null){
         form.classList.add(SHOWING);
-        handleSubmit(e);
+        form.addEventListener("submit", handleSubmit);
     }else{
         form.classList.remove(SHOWING);
         name.classList.add(SHOWING);
