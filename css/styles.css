@@ -18,6 +18,9 @@ body{
 .showing{
     display: block;
 }
+.todoList li{
+    color: #ffffff;
+}
 .bgImg{
     position: absolute;
     width: 100%;
@@ -25,4 +28,7 @@ body{
     top: 0;
     left: 0;
     z-index: -1;
+}
+.weather{
+    color: #ffffff;
 }
