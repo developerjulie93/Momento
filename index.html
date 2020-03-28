@@ -1,31 +1,24 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momento</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="clock">
-            <h1>00:00:00</h1>
+    <div class="description">
+        <div id="jsTime" class="time">
+            <h1>00 : 00</h1>
         </div>
-
-        <form class="form">
+        <div id="jsName" class="name">
             <input type="text" placeholder="What is your name?" />
-        </form>
-        <h2 class="name"></h2>
-
-        <form class="todoForm">
-            <input type="text" placeholder="Write your todo" />
-        </form>
-        <ul class="todoList"></ul>
-        <span class="weather"></span>
+        </div>
     </div>
-    <script src="js/todo.js" type="text/javascript"></script>
-    <script src="js/greeting.js" type="text/javascript"></script>
-    <script src="js/clock.js" type="text/javascript"></script>
-    <script src="js/bgImg.js" type="text/javascript"></script>
-    <script src="js/weather.js" type="text/javascript"></script>
+    <script src="js/bgImg.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/name.js"></script>
 </body>
+
 </html>

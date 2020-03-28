@@ -1,19 +1,14 @@
 const body = document.querySelector("body");
 
-const NumbOfImg = 3;
-
-function makeBgImg(randomNumber){
-    const img = new Image();
-    img.src = `img/${randomNumber+1}.jpg`;
+const numOfImg = 3;
+function makeBg(){
+    const img  = new Image();
+    const num = Math.floor(Math.random()*numOfImg)+1;
+    img.src = `img/${num}.jpg`;
     img.classList.add("bgImg");
     body.prepend(img);
 }
-function genNumber(){
-    const number = Math.floor(Math.random() * NumbOfImg);
-    return number;
-}
-function init(){   
-    const randomNumber = genNumber();
-    makeBgImg(randomNumber);
+function init(){
+    makeBg();
 }
 init();
