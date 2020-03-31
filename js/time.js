@@ -10,6 +10,6 @@ function makeTime(){
 }
 function init(){
     makeTime();
-    setInterval(makeTime, 1000);
+    setInterval(makeTime, 1000*60);
 }
 init();
