@@ -6,8 +6,7 @@ body{
     height: 100%;
     margin: 0;
     background-color: #00134d;
-    display: flex;
-    justify-content: center;
+
 }
 .bgImg{
     margin: 0;
@@ -18,14 +17,20 @@ body{
     top: 0;
     z-index: -1;
 }
+.weather{
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color:white;
+}
 .description{
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
     height: 50%;
-    top: 20%;
+    margin: 0 auto;
+    padding-top: 200px;
 }
 .time h1{
     color: white;
