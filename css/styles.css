@@ -1,89 +1,130 @@
-*{
-    margin: 10px 0;
-    padding: 0;
+* {
+  margin: 10px 0;
+  padding: 0;
 }
-body{
-    height: 100%;
-    margin: 0;
-    background-color: #00134d;
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #00134d;
+}
+.bgImg {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.weather {
+  float: right;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: white;
+}
+h4 {
+  margin: 0;
+}
+.icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+#icon {
+  display: inline;
+}
+#temp {
+  display: inline;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 455px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
 
+.time h1 {
+  color: white;
+  font-size: 3.5rem;
 }
-.bgImg{
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
+.name {
+  width: 50%;
+  display: none;
 }
-.weather{
-    float: right;
-    width: 100px;
-    height: 100px;
-    background-color:white;
+.name input {
+  all: unset;
+  width: 100%;
+  height: 45px;
+  font-size: 1.125rem;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid white;
 }
-.description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-    padding-top: 200px;
+.name input::placeholder {
+  color: white;
 }
-.time h1{
-    color: white;
-    font-size: 4rem;
+.userName {
+  display: none;
+  color: white;
+  font-size: 2.75rem;
 }
-.name{
-    width: 50%;
-    display: none;
+.showing {
+  display: block;
 }
-.name input{
-    all:unset;
-    width: 100%;
-    height: 45px;
-    font-size: 1.125rem;
-    text-align: center;
-    color: white;
-    border-bottom: 2px solid white;
+#todo-description {
+  margin-top: 20px;
+  color: white;
 }
-.name input::placeholder{
-    color: white;
+.todo {
+  width: 50%;
 }
-.userName{
-    display: none;
-    color: white;
-    font-size: 3.75rem;
+.todo input {
+  all: unset;
+  width: 100%;
+  height: 45px;
+  font-size: 1.125rem;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid white;
 }
-.showing{
-    display: block;
+.todoList {
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-#todo-description{
-    margin-top: 20px;
-    color: white;
-}
-.todo{
-    width: 50%;
-}
-.todo input{
-    all:unset;
-    width: 100%;
-    height: 45px;
-    font-size: 1.125rem;
-    text-align: center;
-    color: white;
-    border-bottom: 2px solid white;
-}
-ul li{
-    color: white;
-    list-style: none;
+ul li {
+  color: white;
+  list-style: none;
 }
 ul li:before {
-    content: '✓  ';
+  content: "✓  ";
 }
-ul li span{
-    color: white;
-    font-size: 1.25rem;
+ul li span {
+  color: white;
+  font-size: 1.25rem;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

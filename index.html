@@ -1,37 +1,37 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <div id="jsWeather" class="weather">
-        <h2 id="icon_temp"></h2>
-        <h4 id="city"></h4>
+      <span id="icon"></span>
+      <h4 id="temp"></h4>
+      <h4 id="city"></h4>
     </div>
     <div class="description">
-        <div id="jsTime" class="time">
-            <h1>00 : 00</h1>
-        </div>
-        <form id="jsName" class="name">
-            <input type="text" placeholder="What is your name?" />
-        </form>
-        <h1 class="userName"></h1>
-        <h2 id="todo-description">What is your main focus tody?</h2>
-        <form id="jsTodo" class="todo">
-            <input type="text" />
-        </form>
+      <div id="jsTime" class="time">
+        <h1>00 : 00</h1>
+      </div>
+      <form id="jsName" class="name">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h1 class="userName"></h1>
+      <h2 id="todo-description">What is your main focus today?</h2>
+      <form id="jsTodo" class="todo">
+        <input type="text" />
+      </form>
+      <div class="todoList">
         <ul id="todo"></ul>
+      </div>
     </div>
     <script src="js/bgImg.js"></script>
     <script src="js/time.js"></script>
     <script src="js/name.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
-
-</body>
-
+  </body>
 </html>
