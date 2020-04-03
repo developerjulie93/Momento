@@ -1,17 +1,20 @@
 const formTodo = document.querySelector("#jsTodo"),
-        inputTodo = formTodo.querySelector("input");
+  inputTodo = formTodo.querySelector("input");
 const ul = document.querySelector("#todo");
 
-function makeTodoList(e){
-    e.preventDefault();
-    const li = document.createElement("li");
-    const span = document.createElement("span");
-    span.innerText = inputTodo.value;
-    li.append(span);
-    ul.appendChild(li);
-    inputTodo.value = null;
+function onRemove(e) {
+  const target = e.target;
+  target.parentNode.removeChild(target);
 }
-function init(){
-    formTodo.addEventListener("submit", makeTodoList);
+function makeTodoList(e) {
+  e.preventDefault();
+  const li = document.createElement("li");
+  li.innerText = inputTodo.value;
+  ul.appendChild(li);
+  inputTodo.value = null;
+  li.addEventListener("click", onRemove);
+}
+function init() {
+  formTodo.addEventListener("submit", makeTodoList);
 }
 init();
